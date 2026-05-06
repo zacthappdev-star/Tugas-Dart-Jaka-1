@@ -10,14 +10,13 @@ void main () {
   int UAS = int.parse(inputUAS ?? "0"); // Rata Rata Nilai UAS
 
   stdout.write ("Jumlah Kehadiran Siswa:");
-  String? JumlahKehadiran = stdin.readLineSync();
+  String? JumlahKehadiran = stdin.readLineSync(); // Rata Rata Kehadiran Siswa
   double kehadiran = double.parse(JumlahKehadiran?? "0"); // Nilai Kehadiran Dalam Persen
   double rataRata =(UTS + UAS)/2; // Rata Rata Nilai Akhir
  
   if (rataRata >=70 && kehadiran >= 75 && (UTS>60||UAS >60)){
   print ("Siswa Lulus");
 } else {print("Siswa Tidak Lulus");}
-
  }
 
  
